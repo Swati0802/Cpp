@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class rectangle{
+    int w,h;
+public:
+    void getData(int ww, int hh){
+       w = ww;
+       h = hh;
+       displayValue();
+    }
+    void displayValue(){
+        cout<<"wight :"<<w<<endl;
+        cout<<"height :"<<h<<endl;
+    }
+};
+int main(){
+    rectangle r1;
+
+    r1.getData(5,6);
+    cout<<"In main function"<<endl;
+    r1.displayValue();
+
+    return 0;
+}
